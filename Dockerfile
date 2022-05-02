@@ -5,6 +5,3 @@ FROM dclong/jupyterhub-jdk
 # Kotlin kernel
 RUN pip3 install kotlin-jupyter-kernel \
     && /scripts/sys/purge_cache.sh
-
-COPY scripts/ /scripts/
-
